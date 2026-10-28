@@ -7,7 +7,7 @@ description: >-
 permalink: /
 ---
 
-**Satchel** (working title) is a planned prototype that brings
+**Satchel** (working title) is a prototype that brings
 [Solid](https://solidproject.org/){:target="_blank" rel="noopener"} storage to
 [Scratch](https://scratch.mit.edu/){:target="_blank" rel="noopener"} projects: a child's
 projects are saved to their own personal Pod, instead of living only inside
