@@ -907,10 +907,24 @@ $code-gutter-edge: $code-gutter-width + $code-gutter-padding;
 .site-footer {
   background: $color-band-bg;
   border-top: 1px solid $color-border;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 3rem;
   color: $color-text-muted;
   font-size: 0.9rem;
-  text-align: right;
+}
+
+// The contact link on the left and the trademark notice on the right, side
+// by side on wider screens; stacked, link first, on phones.
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  @media (width >= 48rem) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 }
 
 .footer-link {
@@ -936,12 +950,13 @@ $code-gutter-edge: $code-gutter-width + $code-gutter-padding;
   stroke-linejoin: round;
 }
 
-// The trademark notice under the contact link: on its own line, read left
-// to right like body text.
 .site-footer__notice {
   max-width: 40rem;
-  margin: 1rem 0 0 auto;
-  text-align: left;
+  margin: 0;
+
+  @media (width >= 48rem) {
+    text-align: right;
+  }
 }
 
 // Diagrams: set up by diagram-modal.js, which opens each one full size in
