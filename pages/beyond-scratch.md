@@ -38,8 +38,8 @@ decided by whichever vendor happened to build the tool that produced it.**
 That control is shared and bounded rather than blanket ownership: a child's
 Pod stays structurally separate from a parent's, a guardian is a recorded
 relationship rather than an assumed one, and a share needs both the child's
-and the guardian's agreement. See [Satchel: adding Solid storage to
-Scratch](/what-is-satchel/) for how that works in the prototype.
+and the guardian's agreement. See [Satchel: Solid storage for
+Scratch projects](/what-is-satchel/) for how that works in the prototype.
 
 ## What Satchel will produce that others can use
 

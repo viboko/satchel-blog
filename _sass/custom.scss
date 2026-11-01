@@ -177,7 +177,7 @@ main {
   gap: 1.5rem;
 }
 
-// Note linking to the ODI open call and the application
+// Note linking to the ODI open call
 
 .application {
   margin-top: 1.75rem;
@@ -934,6 +934,14 @@ $code-gutter-edge: $code-gutter-width + $code-gutter-padding;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+// The trademark notice under the contact link: on its own line, read left
+// to right like body text.
+.site-footer__notice {
+  max-width: 40rem;
+  margin: 1rem 0 0 auto;
+  text-align: left;
 }
 
 // Diagrams: set up by diagram-modal.js, which opens each one full size in
