@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Satchel: adding Solid storage to Scratch"
+title: "Satchel: Solid storage for Scratch projects"
 description: >-
   What the Satchel prototype actually builds, how the pieces fit together,
   how a project gets from a child's editor to their Code Club, and the
@@ -9,8 +9,8 @@ description: >-
 permalink: /what-is-satchel/
 ---
 
-The core proof of concept is a **storage adapter that lets Scratch save and
-load projects to and from a [Solid](/what-is-solid/) Pod**, instead of a
+The core proof of concept is a **storage adapter that lets Scratch projects be
+saved to and loaded from a [Solid](/what-is-solid/) Pod**, instead of a
 platform's own servers — plus a **consent-and-sharing layer** built on top of
 it: a dashboard where a child and their guardian, together, grant and revoke
 access to that work, and a small agent that carries out what they decide.
@@ -31,7 +31,7 @@ Jump to: [What's being built](#built) &middot;
 
 ## What's being built {#built}
 
-1. **Solid Pod save and load, built into Scratch itself.** Built on top of
+1. **Solid Pod save and load, in satchel-blocks.** An editor built on top of
    [scratch-editor](https://github.com/scratchfoundation/scratch-editor){:target="_blank" rel="noopener"},
    the open-source project behind the Scratch editor — specifically its
    `scratch-gui` package — rather than a separate editor written from
@@ -89,10 +89,10 @@ app reads, writes or sends.
 <div class="mermaid">
 flowchart LR
     accTitle: How Satchel's components depend on each other
-    accDescr: Three apps (the Satchel editor, the Satchel dashboard and the Satchel agent) all use a shared core package and vocabulary. The editor saves and loads projects in the child's Pod. The dashboard writes requests and decisions into the child's and guardian's Pods, and registers and pings the agent. The agent reads the child's and guardian's Pods, writes access grants and log entries into the child's Pod, keeps its registry in its own Pod, and tells people about shares through a Solid inbox message or by email.
+    accDescr: Three apps (satchel-blocks, the Satchel dashboard and the Satchel agent) all use a shared core package and vocabulary. The editor saves and loads projects in the child's Pod. The dashboard writes requests and decisions into the child's and guardian's Pods, and registers and pings the agent. The agent reads the child's and guardian's Pods, writes access grants and log entries into the child's Pod, keeps its registry in its own Pod, and tells people about shares through a Solid inbox message or by email.
 
     subgraph apps["Apps in the browser"]
-        Editor["Satchel editor<br/>(Scratch + adapter)"]
+        Editor["satchel-blocks<br/>(editor + adapter)"]
         Dashboard["Satchel dashboard"]
     end
 
@@ -184,10 +184,10 @@ sequenceDiagram
 <div class="mermaid">
 sequenceDiagram
     accTitle: The child creates and saves a project
-    accDescr: The child logs in from the Satchel editor. The editor sends them to their own Solid login page and gets back a short-lived token for the child's identity; Satchel never sees the password. When the child saves, the editor turns the project into a Scratch file and the core package writes it, with a small description and thumbnail, into its own folder in the child's Pod. The Pod checks that the child is its owner and accepts it.
+    accDescr: The child logs in from satchel-blocks. The editor sends them to their own Solid login page and gets back a short-lived token for the child's identity; Satchel never sees the password. When the child saves, the editor turns the project into a Scratch file and the core package writes it, with a small description and thumbnail, into its own folder in the child's Pod. The Pod checks that the child is its owner and accepts it.
     autonumber
     actor Child
-    participant Editor as Satchel editor
+    participant Editor as satchel-blocks
     participant Core as Core package
     participant IdP as Child's Solid login
     participant CPod as Child's Pod
@@ -284,10 +284,10 @@ sequenceDiagram
 <div class="mermaid">
 sequenceDiagram
     accTitle: The Code Club opens the project
-    accDescr: The club leader opens the link from the notification, logs in to the Satchel editor as the Code Club, and the editor asks the child's Pod for the project. The Pod checks its access rules. If the grant exists, the project loads and runs on the projector, read-only. If there's no grant yet, or it has been taken away, the Pod refuses and the editor says the club doesn't have access.
+    accDescr: The club leader opens the link from the notification, logs in to satchel-blocks as the Code Club, and the editor asks the child's Pod for the project. The Pod checks its access rules. If the grant exists, the project loads and runs on the projector, read-only. If there's no grant yet, or it has been taken away, the Pod refuses and the editor says the club doesn't have access.
     autonumber
     actor Leader as Club leader
-    participant Editor as Satchel editor
+    participant Editor as satchel-blocks
     participant CPod as Child's Pod
 
     Leader->>Editor: Open the link, log in as the Code Club
@@ -451,7 +451,7 @@ three licences:
 
 | Licence | Applies to | Why |
 | --- | --- | --- |
-| [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html){:target="_blank" rel="noopener"} | The Satchel editor | It's a fork of `scratch-gui`, from the `scratch-editor` monorepo, which is itself AGPL-3.0 — so the fork has to be too. |
+| [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html){:target="_blank" rel="noopener"} | satchel-blocks, the editor | It's a fork of `scratch-gui`, from the `scratch-editor` monorepo, which is itself AGPL-3.0 — so the fork has to be too. |
 | [MIT](https://opensource.org/license/mit){:target="_blank" rel="noopener"} | The core package, the dashboard and the agent | None of these include any Scratch code, so they can use a permissive licence, letting another tool pick up the pattern without taking on the AGPL's obligations. |
 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){:target="_blank" rel="noopener"} | The vocabulary and documentation | These aren't software, so a Creative Commons licence fits them better than a software licence — anyone can reuse and adapt them, with credit. |
 

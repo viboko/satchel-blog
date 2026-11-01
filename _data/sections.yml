@@ -5,8 +5,8 @@
     make games and animations — but a project saved there lives only inside
     whichever club, school or platform's account created it.
   url: /what-is-scratch/
-  icon: /assets/images/scratch-logo.svg
-  icon_alt: The Scratch logo
+  icon: /assets/images/when-green-flag-clicked.svg
+  icon_alt: A "when green flag clicked" code block
 
 - id: solid
   title: What is Solid?
@@ -19,9 +19,9 @@
   icon_alt: The Solid logo
 
 - id: prototype
-  title: "Satchel: adding Solid storage to Scratch"
+  title: "Satchel: Solid storage for Scratch projects"
   summary: >-
-    A prototype Scratch editor that saves a child's projects to their own
+    A prototype that saves a child's Scratch projects to their own
     Solid Pod, plus a sharing dashboard where the child and their guardian
     decide together who else can see them. It aims to show that children's
     work can be portable, and shared on the family's terms rather than a
