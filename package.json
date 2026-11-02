@@ -1,5 +1,5 @@
 {
-  "name": "satchel-project",
+  "name": "satchel-blog",
   "private": true,
   "devDependencies": {
     "@eslint/js": "10.0.1",
