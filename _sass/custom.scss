@@ -265,9 +265,10 @@ main {
   margin: 0 0 1.5rem;
 }
 
-// More room between the intro paragraph and the screenshot below it.
+// The same room above the screenshot as `.home`'s gap leaves below it.
 .intro .screenshot {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
 }
 
 // Callout cards
@@ -537,11 +538,9 @@ main {
   }
 }
 
-// Shared by the screenshot on the home page and the one on
-// what-is-scratch: a bordered, rounded frame around a `<figure>` whose
-// `<img>` is wrapped in a link to the full-size image, with a caption
-// below it. Centering it is only visible on the home page - on
-// what-is-scratch its max-width already matches its container's.
+// The screenshot on the home page: a bordered, rounded frame around a
+// `<figure>` whose `<img>` is wrapped in a link to the full-size image,
+// with a caption below it.
 // Overrides the more general `.intro img` / `.page__content img` rules
 // above, so it must stay after both in source order.
 .screenshot {
@@ -564,20 +563,7 @@ main {
   }
 
   figcaption {
-    // Percentage (not a fixed rem) so the pull-up scales with the image's
-    // own rendered width - the mockups have a baked-in drop shadow at the
-    // bottom that's a fixed proportion of their width, not a fixed number
-    // of pixels. A fixed rem value looked fine at desktop widths but ate
-    // into the actual screenshot content once the image (and so the
-    // shadow) shrank on narrow/mobile viewports.
-    margin-top: -4.5%;
-
-    // Extra left padding (as a percentage, so it scales with the image
-    // like margin-top above) lines the caption up with the screenshot
-    // inside the image, not with the image's own edge - the mockups have
-    // a drop shadow baked in that pads their left side more than the
-    // right.
-    padding: 0.85rem 1.25rem 1rem 4%;
+    padding: 0.85rem 1.25rem 1rem;
     color: $color-text-muted;
     font-size: 0.8rem;
     text-align: left;

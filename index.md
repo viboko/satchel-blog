@@ -18,3 +18,5 @@ take it back whenever they like — rather than the all-or-nothing "shared or
 not" switch on the Scratch website. A small, replaceable agent carries out
 their decisions,
 without ever holding the children's work or anyone's password.
+
+{% include screenshot.html src="/assets/images/save-to-pod.webp" alt="Mock-up of a block-based coding editor with its File menu open and a Save to your Solid Pod dialog in front, prompting for a WebID to log in and save the project to a satchel-blocks container in that Pod." caption="Mock-up of saving a project to your Solid Pod." %}
