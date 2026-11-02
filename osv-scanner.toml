@@ -49,3 +49,8 @@ reason = "Dev-only transitive dependency of markdownlint-cli (math syntax only, 
 id = "GHSA-mrhx-c7xc-m3w5" # zod, via @lhci/cli -> lighthouse -> puppeteer-core -> chromium-bidi
 ignoreUntil = 2027-01-05
 reason = "Dev-only transitive dependency of @lhci/cli; fix is in zod 4, outside chromium-bidi's ^3.24.1 range"
+
+[[IgnoredVulns]]
+id = "GHSA-g3hv-75wg-m249" # minimatch, via eslint, markdownlint-cli and pa11y-ci -> globby -> glob
+ignoreUntil = 2027-01-05
+reason = "Dev-only transitive dependency of the linters and pa11y-ci, matching only this repo's own globs; fix is in minimatch 11, outside their ^3 and ^10 ranges"

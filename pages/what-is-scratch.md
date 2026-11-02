@@ -7,9 +7,6 @@ description: >-
 permalink: /what-is-scratch/
 ---
 
-<!-- markdownlint-disable-next-line MD034 -->
-{% include screenshot.html src="/assets/images/scratch-screenshot.webp" alt="Screenshot of the Scratch online editor showing a project called Satchel, with code blocks controlling a cat sprite that walks, jumps and picks up a satchel, alongside sprite costumes for the cat, satchel, Solid logo and Scratch logo." caption="The Scratch interface at" link_url="https://scratch.mit.edu/" link_text="scratch.mit.edu" %}
-
 [Scratch](https://scratch.mit.edu/){:target="_blank" rel="noopener"} is a visual, block-based programming
 language and online community designed for children roughly 8–16, built so
 that "programming" means snapping together blocks like *move 10 steps* or

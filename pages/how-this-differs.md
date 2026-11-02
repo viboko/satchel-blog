@@ -60,7 +60,7 @@ The control isn't blanket "family" ownership, though. The child and their
 guardian are separate parties, a guardian is a recorded relationship rather
 than something inferred from being a parent, and a share only takes effect
 when both agree, with either able to revoke it. The full model is in
-[Satchel: adding Solid storage to Scratch](/what-is-satchel/).
+[Satchel: Solid storage for Scratch projects](/what-is-satchel/).
 
 Decentralised storage removes the single-point-of-trust failure mode, but
 it doesn't by itself solve, for example, who holds a young child's Pod
