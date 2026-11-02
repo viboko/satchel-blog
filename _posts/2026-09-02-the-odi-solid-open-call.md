@@ -3,7 +3,7 @@ title: The ODI's Solid open call
 description: >-
   The Open Data Institute has opened a call for non-commercial projects that
   use Solid for social good. Here's what it offers, and why I want to apply
-  with an idea for Scratch and Code Club.
+  with an idea for children's Scratch projects.
 ---
 
 The [Open Data Institute](https://theodi.org/){:target="_blank" rel="noopener"}
@@ -80,8 +80,8 @@ where children learn to code, mostly with
 club's site is here:
 [gravesend-code-club.viboko.dev](https://gravesend-code-club.viboko.dev/){:target="_blank" rel="noopener"}.
 
-I would like to explore the possibility of modifying Scratch to add the
-ability to store projects to a Solid pod. As it stands the permissions and
+I would like to explore building on Scratch's open-source code, so that
+projects can be stored in a Solid Pod. As it stands the permissions and
 consent model used by Scratch is fairly primitive. A child's projects could
 live in a Pod of their own, and the child and their parents could decide who
 gets to see them. It feels like there is plenty of potential! My plan is to

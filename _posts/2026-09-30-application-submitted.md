@@ -8,8 +8,7 @@ description: >-
 
 I've submitted my application to the
 [ODI's Solid open call](/blog/2026-09-02-the-odi-solid-open-call/), just
-ahead of today's deadline. You can read
-[the whole application](/application/) on this site.
+ahead of today's deadline.
 
 ## The idea
 
@@ -22,10 +21,10 @@ club, school or platform account they were made in.
 
 On top of that sits a sharing dashboard, where the child and their guardian
 decide *together* who else can see each project, and either of them can take
-a share back at any time. That replaces Scratch's all-or-nothing "shared or
-not" switch. A small, replaceable agent carries out their decisions, without
+a share back at any time, rather than the all-or-nothing "shared or not"
+switch on the Scratch website. A small, replaceable agent carries out their decisions, without
 ever holding the children's work or anyone's password.
-[Satchel: adding Solid storage to Scratch](/what-is-satchel/) explains it in
+[Satchel: Solid storage for Scratch projects](/what-is-satchel/) explains it in
 more detail.
 
 Scratch is the concrete starting point, but the pattern underneath is meant

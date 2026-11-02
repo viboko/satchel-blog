@@ -8,7 +8,7 @@ description: >-
 ---
 
 The ODI support period starts today, so this is a good moment to get the
-foundations right. The [first prototype](/blog/2026-10-25-initial-investigations/)
+foundations right. The first prototype
 proved that a Scratch project can be saved to a Solid Pod, but all of its
 code lived inside a fork of Scratch's editor. Before building anything
 else, I want the code split into the right pieces, so that each one can
