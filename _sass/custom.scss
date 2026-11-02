@@ -294,7 +294,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  // "Satchel: adding Solid storage to Scratch" is the third card; stretch
+  // "Satchel: Solid storage for Scratch projects" is the third card; stretch
   // it across both columns so it forms its own full-width row between the
   // two pairs either side.
   .callout:nth-child(3) {
@@ -1294,8 +1294,8 @@ $code-gutter-edge: $code-gutter-width + $code-gutter-padding;
   font-size: 0.9rem;
 }
 
-// The contact link on the left and the trademark notice on the right, side
-// by side on wider screens; stacked, link first, on phones.
+// The links on the left and the trademark notice on the right, side
+// by side on wider screens; stacked, links first, on phones.
 .site-footer .container {
   display: flex;
   flex-direction: column;
@@ -1311,8 +1311,7 @@ $code-gutter-edge: $code-gutter-width + $code-gutter-padding;
 
 .site-footer__links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex-shrink: 0;
   gap: 0.5rem 1.5rem;
 }
 
