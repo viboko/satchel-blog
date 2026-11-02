@@ -26,6 +26,7 @@ against each other at this stage. It's a conversation to understand the
 project and whether the ODI can support it well: in the email's own words,
 "a conversation about what you'll need from us".
 
-Between now and the interview I'll be working out exactly what I'd want from
-the ODI's engineers, its hosted Solid servers and its wider network. I'll
-also get a first working demo of Satchel ready to show.
+The interview is next Wednesday. Between now and then I'll be working out
+exactly what I'd want from the ODI's engineers, its hosted Solid servers and
+its wider network. I'll also get a first working demo of Satchel ready to
+show.
