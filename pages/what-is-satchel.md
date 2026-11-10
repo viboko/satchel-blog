@@ -451,7 +451,8 @@ three licences:
 
 | Licence | Applies to | Why |
 | --- | --- | --- |
-| [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html){:target="_blank" rel="noopener"} | satchel-blocks, the editor | It's a fork of `scratch-gui`, from the `scratch-editor` monorepo, which is itself AGPL-3.0 — so the fork has to be too. |
+| [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html){:target="_blank" rel="noopener"} | The editor | It's a fork of Scratch's `scratch-editor` monorepo, which is itself AGPL-3.0, so the fork has to be too. |
+| [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html){:target="_blank" rel="noopener"} | satchel-blocks, the app | It isn't a fork: its code is new. But it's built together with the editor into one program, so the app as a whole comes under the editor's AGPL. |
 | [MIT](https://opensource.org/license/mit){:target="_blank" rel="noopener"} | The core package | It includes no Scratch code, and other apps build it into their own, so a permissive licence lets another tool pick up the pattern without taking on the AGPL's obligations. |
 | [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html){:target="_blank" rel="noopener"} | The dashboard and the agent | They include no Scratch code either, but they run as services that carry out children's sharing decisions. The AGPL keeps them open: anyone who runs a changed version for others has to share their changes. |
 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){:target="_blank" rel="noopener"} | The vocabulary and documentation | These aren't software, so a Creative Commons licence fits them better than a software licence — anyone can reuse and adapt them, with credit. |
