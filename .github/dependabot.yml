@@ -9,6 +9,13 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    groups:
+      # stylelint-config-standard-scss pins stylelint's major version as a
+      # peer dependency, so the two have to move together or npm ci fails.
+      stylelint:
+        patterns:
+          - stylelint
+          - stylelint-*
 
   - package-ecosystem: github-actions
     directory: /
