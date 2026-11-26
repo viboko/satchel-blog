@@ -457,6 +457,12 @@ three licences:
 | [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html){:target="_blank" rel="noopener"} | The dashboard and the agent | They include no Scratch code either, but they run as services that carry out children's sharing decisions. The AGPL keeps them open: anyone who runs a changed version for others has to share their changes. |
 | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/){:target="_blank" rel="noopener"} | The vocabulary and documentation | These aren't software, so a Creative Commons licence fits them better than a software licence — anyone can reuse and adapt them, with credit. |
 
+Anyone contributing to these repositories is asked to sign a [Contributor
+Licence Agreement](/cla/v1/) once. Contributors keep their copyright, but
+the agreement lets the code be offered under another licence as well, such
+as the agent under a paid licence for an organisation that can't accept the
+AGPL.
+
 ## Out of scope for this prototype {#out-of-scope}
 
 ### Stretch goals, if time allows
