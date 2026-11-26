@@ -19,4 +19,4 @@ not" switch on the Scratch website. A small, replaceable agent carries out
 their decisions,
 without ever holding the children's work or anyone's password.
 
-{% include screenshot.html src="/assets/images/save-to-pod.webp" alt="Mock-up of a block-based coding editor with its File menu open and a Save to your Solid Pod dialog in front, prompting for a WebID to log in and save the project to a satchel-blocks container in that Pod." caption="Mock-up of saving a project to your Solid Pod." %}
+{% include screenshot.html src="/assets/images/save-to-pod.webp" alt="A block-based coding editor with a project called hippo-walk open: a purple hippo stands on a path by a pond, and a Connect my Pod panel below the Save button asks for a WebID to save the project to a Solid Pod." caption="Mock-up of saving a project to your Solid Pod." %}
