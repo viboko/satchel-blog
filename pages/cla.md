@@ -29,8 +29,10 @@ permission, not ownership.
 
 ## The agreement
 
-In this agreement, "we" and "us" mean Viboko, the maintainer of the
-repositories at [github.com/viboko](https://github.com/viboko){:target="_blank" rel="noopener"}. "You" means the person agreeing to it. A "contribution" is
+In this agreement, "we" and "us" mean Viboko, the business name of the
+person who maintains the repositories at [github.com/viboko](https://github.com/viboko){:target="_blank" rel="noopener"},
+or whoever this agreement is transferred to under section 8. Viboko isn't a
+company yet. "You" means the person agreeing to it. A "contribution" is
 anything you submit to one of those repositories, such as code,
 documentation, images or other material, by a pull request, an issue, a
 comment or any other way that's meant for inclusion.
@@ -64,6 +66,12 @@ comment or any other way that's meant for inclusion.
 7. **Your own rights stay yours.** Apart from the licences above, you keep
    every right in your contributions, including the right to use them
    yourself, however you like.
+8. **We can pass this agreement on.** We may transfer this agreement, and
+   the licences you've given under it, to a company or other organisation
+   that takes over maintaining these repositories, such as a company set up
+   as Viboko. From then on, "we" and "us" mean that organisation, and we'll
+   say so on this page. Your licences to everyone else who receives the
+   software carry on as they were.
 
 ## The editor fork
 
