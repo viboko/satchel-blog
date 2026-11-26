@@ -447,7 +447,7 @@ that a different agent could take over from Satchel's.
 ## Licensing {#licensing}
 
 Everything Satchel produces is intended to be released openly, under one of
-three licences, or two of them together for the vocabulary:
+three licences:
 
 | Licence | Applies to | Why |
 | --- | --- | --- |
